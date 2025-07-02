@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tweet Embed</title>
+</head>
+<body>
+
+<blockquote class="twitter-tweet" data-theme="dark">
+    <!-- Tweet content will be loaded here by the script -->
+</blockquote>
+
+<script>
+    // Function to get URL parameters
+    function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
+
+    // Get the tweet ID from the URL and update the blockquote
+    var tweetId = getUrlParameter('id');
+    if (tweetId) {
+        var blockquote = document.querySelector('.twitter-tweet');
+        blockquote.innerHTML = '<a href="https://twitter.com/x/status/' + tweetId + '"></a>';
+    }
+</script>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</body>
+</html> 
