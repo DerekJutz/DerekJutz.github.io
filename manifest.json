@@ -1,11 +1,11 @@
 {
-    "name": "portfolio_website",
-    "short_name": "portfolio_website",
+    "name": "Derek Jutz | Creative & Brand Strategy",
+    "short_name": "Derek Jutz",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#000000",
     "theme_color": "#000000",
-    "description": "A new Flutter project.",
+    "description": "The portfolio of Derek Jutz, a brand strategist, director, and copywriter specializing in end-to-end media creative.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
